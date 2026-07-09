@@ -510,7 +510,7 @@ h1 {
   }
 
   .brand img {
-    width: min(320px, 72vw);
+    width: min(420px, 84vw);
   }
 
   .nav {
@@ -583,7 +583,7 @@ h1 {
   }
 
   .brand img {
-    width: min(220px, 68vw);
+    width: min(360px, 92vw);
   }
 
   .header-call {
