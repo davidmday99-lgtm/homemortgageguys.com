@@ -368,6 +368,42 @@ h1 {
   font-size: 0.88rem;
 }
 
+.compliance-footer {
+  padding: 28px clamp(18px, 5vw, 72px) 34px;
+  text-align: center;
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+
+.compliance-footer p {
+  margin: 0 auto;
+}
+
+.tagline {
+  max-width: 780px;
+  color: #07589b;
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.company-line {
+  max-width: 860px;
+  margin-top: 22px;
+  color: #687482;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.important-notice {
+  max-width: 1040px;
+  margin-top: 18px;
+  color: #66727f;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 @media (max-width: 900px) {
   .site-header {
     grid-template-columns: 1fr;
