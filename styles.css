@@ -498,6 +498,60 @@ h1 {
   line-height: 1.5;
 }
 
+.equal-housing-label {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(7, 47, 79, 0.18);
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(7, 47, 79, 0.16);
+  color: var(--navy);
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.equal-housing-icon {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 22px;
+  border: 2px solid currentColor;
+  border-top: 0;
+}
+
+.equal-housing-icon::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+  transform: rotate(45deg);
+  background: #fff;
+}
+
+.equal-housing-icon::after {
+  content: "=";
+  position: absolute;
+  right: 4px;
+  bottom: 0;
+  z-index: 1;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
 @media (max-width: 900px) {
   .site-header {
     grid-template-columns: 1fr;
@@ -649,5 +703,23 @@ h1 {
 
   .trust-strip strong {
     overflow-wrap: anywhere;
+  }
+
+  .equal-housing-label {
+    right: 12px;
+    bottom: 12px;
+    padding: 7px 8px;
+    font-size: 0.64rem;
+  }
+
+  .equal-housing-icon {
+    width: 24px;
+    height: 19px;
+  }
+
+  .equal-housing-icon::before {
+    top: -8px;
+    width: 17px;
+    height: 17px;
   }
 }
